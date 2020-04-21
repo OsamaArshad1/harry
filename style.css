@@ -1,4 +1,4 @@
-/* CSS Reset */
+ /* CSS Reset */
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     display: flex;
     /*justify-content: center;*/
     align-items: center;
-    position: absolute;
+    position: relative;
 }
 
 /*Navigation Bar: Logo and Image*/
@@ -34,6 +34,10 @@
         display: flex;
     }
    #navbar::before{
+
+
+       top: 0px;
+       left: 0px;
        content: "";
         position: absolute;
        background-color: black;
@@ -67,14 +71,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 270px;
 }
 
+#h1{
+    text-align: center;
+}
 #home::before{
     content: "";
     position: absolute;
-    background:url("bg1.jpg") no-repeat center center/cover;
-    height: 100%;
+    background: url("../bg1.jpg") no-repeat center center/cover;
+    height: 60%;
+    top: 0px;
+    left: 0px;
     width: 100%;
     z-index: -1;
     opacity: 0.89;
@@ -94,11 +103,47 @@
     text-align: center;
 }
 
+
+/*Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+
+    border: 2px solid red;
+    padding: 12px;
+    margin: 3px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+}
+#services .box h2{
+    text-align: center;
+}
+#services .box  p{
+    text-align: center;
+
+    font-family: 'Bree Serif', serif;
+}
+
+#services .box img {
+     height: 150px;
+     display: block;
+      margin: auto;
+}
+#services{}
 /*Utility Classes*/
 
 .h-primary{
     font-size: 3.2rem;
     padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.2rem;
+    padding: 12px;
+
+    font-family: 'Bree Serif', serif;
 }
 
 .btn{
